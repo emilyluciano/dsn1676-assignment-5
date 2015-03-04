@@ -1,22 +1,22 @@
-var $form = $('.form-box');
-var $name = $('.main-text-holder');
-var $text-box = $('.to-do-text');
+var $form = $('.form');
+var $name = $('.main-holder');
+var $list = $('.list');
 
 $form.on ('submit', function (e) {
     e.preventDefault();
     
     var $li = $('<li>').html($name.val());
-    var $nameDl = $('button class="delete">X</button>');
+    var $nameDl = $('<button class="delete">X</button>');
 
     $nameDl.on('click', function () {
         $li.remove('li');
     });
     
-    $text-box.on('click', 'li', function () {
+    $list.on('click', 'li', function () {
         $(this).addClass('complete');
     });
     
     $li.append($nameDl);
-    $text-box.prepend($li);
+    $list.prepend($li);
     $name.val('');
 });

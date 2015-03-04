@@ -18,7 +18,11 @@ html {
 	box-sizing: inherit;
 }
 
-.input-text-box {
+form {
+    display: inline-block;
+}
+
+.input-text {
  padding: 1.8em 2em;
  margin: auto;
  border-top: solid 2px lightgrey;
@@ -32,18 +36,18 @@ html {
  overflow: hidden;
 }
 
-.to-do-text-box {
+.list-box {
  padding: 1.8em 2em;
  margin: auto;
  border-bottom: solid 1px lightgrey;
  border-left: solid 1px lightgrey; 
  border-right: solid 1px lightgrey;
- background-color: rgb(250, 250, 250);
+ background-color: #e2e2e2;
  width: 19em;
  overflow: hidden;
 }
 
-.to-do-text {
+.list {
 padding: 0;
 margin: 0;
 text-decoration: none;
@@ -51,15 +55,7 @@ list-style: none;
 }
 
 .delete {
- background-image: url();
- border: none;
  float: right;
- margin: 0;
- height: 2em;
- width: 2em;
- padding: .40em;
- background-color: rgb(233, 233, 233);
--webkit-transition: width 1s;
 }
 
 .label-holder {
@@ -67,14 +63,14 @@ list-style: none;
  display: block;
 }
 
-.main-text-holder {
+.main-holder {
  float: left;
  padding: .40em;
  width: 14em;
  margin: 0;
 }
 
-.add-button{
+.button{
  float: right;
  text-align: center;
  margin: 0;
@@ -87,7 +83,7 @@ list-style: none;
  -webkit-transition: width 1s;
 }
 
-.add-button:hover {
+.button:hover {
  background-color: rgb(113, 113, 113);
 }
 
