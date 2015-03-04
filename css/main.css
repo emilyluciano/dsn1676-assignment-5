@@ -42,3 +42,23 @@ html {
  width: 19em;
  overflow: hidden;
 }
+
+.list {
+padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+}
+
+.delete {
+ background-image: url();
+ border: none;
+ float: right;
+ margin: 0;
+ height: 2em;
+ width: 2em;
+ padding: .40em;
+ background-color: rgb(233, 233, 233);
+-webkit-transition: width 1s;
+}
+
