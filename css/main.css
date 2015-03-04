@@ -20,20 +20,25 @@ html {
 
 form {
     display: inline-block;
+    font-family: 'Cinzel';
 }
 
 .input-text {
  padding: 1.8em 2em;
  margin: auto;
- border-top: solid 2px lightgrey;
+ border-top: solid 1.5px lightgrey;
  border-left: solid 1.5px lightgrey;
- border-right: solid 1px lightgrey;
- border-top-left-radius: 14px;
- border-top-left-radius: 14px;
+ border-right: solid 1.5px lightgrey;
+ border-top-right-radius: 12px;
+ border-top-left-radius: 12px;
  background-color: rgb(242, 242, 242);
  width: 19em;
  text-align: center;
  overflow: hidden;
+ background-image:url(../images/tumblr_nk50o3SEmz1qgn23wo1_1280.jpg);
+ background-position: bottom;
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
 .list-box {
@@ -52,6 +57,7 @@ padding: 0;
 margin: 0;
 text-decoration: none;
 list-style: none;
+font-family: 'Cinzel';
 }
 
 .delete {
@@ -60,7 +66,9 @@ list-style: none;
 
 .label-holder {
  font-weight: bold;
+ font-size: 20px;
  display: block;
+ color: white;
 }
 
 .main-holder {
@@ -79,8 +87,9 @@ list-style: none;
  border: none;
  border-top-right-radius: 1px;
  border-bottom-right-radius: 1px;
- background-color: rgb(200, 200, 200);
+ background-color: #e2e2e2;
  -webkit-transition: width 1s;
+  font-family: 'Cinzel';
 }
 
 .button:hover {
@@ -89,6 +98,6 @@ list-style: none;
 
 .complete{
  text-decoration: line-through;
- color: #b1b1b1;
+ color: darkgray;
 }
 
